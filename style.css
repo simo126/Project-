@@ -1,0 +1,36 @@
+body {
+  background: linear-gradient(#e66465, #9198e5);
+}
+header {
+  border: 0.2rem solid black;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+}
+main {
+  border: 0.2rem solid black;
+  border-radius: 0.4rem;
+  text-align: center;
+  margin-top: 1rem;
+  height: 60vh;
+}
+footer {
+  position: relative;
+  bottom: 0px;
+  border: 0.2rem solid black;
+  border-radius: 0.4rem;
+  text-align: center;
+  height: 10vh;
+  margin-top: 1rem;
+}
+.sandwich {
+  margin: 1rem;
+  border: 0.2rem solid black;
+  height: 60%;
+}
+.maker {
+  margin: 1rem;
+  border: 0.2rem solid black;
+  height: 20%;
+}
