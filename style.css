@@ -1,36 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  background: linear-gradient(#e66465, #9198e5);
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  background-color: violet;
 }
 header {
-  border: 0.2rem solid black;
-  border-radius: 0.4rem;
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Verdana, sans-serif;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: tomato;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 2px 2px 10px black;
+  overflow: hidden;
 }
-main {
-  border: 0.2rem solid black;
-  border-radius: 0.4rem;
+ul li {
+  list-style-type: none;
+}
+header h1 {
+  margin-left: 1rem;
+  text-shadow: 2px 2px 20px black;
+}
+header img {
+  margin-left: 1rem;
+  filter: drop-shadow(2px 2px 20px black);
+}
+
+.maker {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  margin-top: 6rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: block;
+  border-radius: 20px;
   text-align: center;
-  margin-top: 1rem;
-  height: 60vh;
+  padding: 3rem;
+}
+.maker ul li .items {
+  display: flex;
+  flex-direction: column;
+}
+.maker ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Button {
+  height: 1rem;
+  width: 1rem;
+}
+#sandwich {
+  margin: 2rem 1rem 1rem 1rem;
+
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 footer {
-  position: relative;
-  bottom: 0px;
-  border: 0.2rem solid black;
-  border-radius: 0.4rem;
+  height: 3rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #476373;
+  color: beige;
   text-align: center;
-  height: 10vh;
-  margin-top: 1rem;
 }
-.sandwich {
-  margin: 1rem;
-  border: 0.2rem solid black;
-  height: 60%;
+#burger {
+  width: 18rem;
 }
-.maker {
-  margin: 1rem;
-  border: 0.2rem solid black;
-  height: 20%;
+#top-bread {
+  height: 6rem;
+  border-radius: 900px 900px 10px 10px;
+  background-color: #a27732;
+  border-top: 9px solid #906725;
+}
+#bottom-bread {
+  background-color: #a27732;
+  border-radius: 10px 10px 50px 50px;
+  height: 60px;
+  border-bottom: 11px solid #724d12;
 }
