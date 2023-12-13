@@ -1,1 +1,1 @@
-# Project By Mohammed Sbaiti and Mohammed Ait Hssaine.
+# Project By Mohammed Sbaiti and Mohamed Ait Hssaine.
