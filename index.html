@@ -29,44 +29,137 @@
             </div>
           </li> -->
           <li>
-            <span>Meats</span>
+            <span>Meats 10dh </span>
             <div class="items">
-              <span><button>+</button><button>-</button>ham</span>
-              <span><button>+</button><button>-</button>turkey</span>
-              <span><button>+</button><button>-</button>roast beef</span>
-              <span><button>+</button><button>-</button>chiken</span>
+              <span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('beef')">+</button
+                ><button class="Button" onclick="remElement('beef')">-</button
+                >beef</span
+              >
+              <span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('turkey')">+</button
+                ><button class="Button" onclick="remElement('turkey')">-</button
+                >turkey</span
+              >
+              <span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('fish')">+</button
+                ><button class="Button" onclick="remElement('fish')">-</button
+                >fish</span
+              >
+              <span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('chicken')">
+                  +</button
+                ><button class="Button" onclick="remElement('chicken')">
+                  -</button
+                >chicken</span
+              >
             </div>
           </li>
           <li>
-            <span>Cheese</span>
+            <span>Cheese 5dh</span>
             <div class="items">
-              <span><button>+</button><button>-</button>swiss</span>
-              <span><button>+</button><button>-</button>american</span>
-              <span><button>+</button><button>-</button>gorgonzola</span>
-              <span><button>+</button><button>-</button>provolone</span>
+              <span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('swiss')">+</button
+                ><button class="Button" onclick="remElement('swiss')">-</button
+                >swiss</span
+              >
+              <span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('american')">
+                  +</button
+                ><button class="Button" onclick="remElement('american')">
+                  -</button
+                >american</span
+              ><span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('cheedar')">
+                  +</button
+                ><button class="Button" onclick="remElement('cheedar')">
+                  -</button
+                >cheedar</span
+              ><span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('mozarella')">
+                  +</button
+                ><button class="Button" onclick="remElement('mozarella')">
+                  -</button
+                >mozarella</span
+              >
             </div>
           </li>
           <li>
-            <span>Veggies</span>
+            <span>Veggies 3dh</span>
             <div class="items">
-              <span><button>+</button><button>-</button>lettuce</span>
-              <span><button>+</button><button>-</button>tomato</span>
-              <span><button>+</button><button>-</button>onion</span>
-              <span><button>+</button><button>-</button>cherry</span>
+              <span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('lettuce')">
+                  +</button
+                ><button class="Button" onclick="remElement('lettuce')">
+                  -</button
+                >lettuce</span
+              >
+              <span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('tomato')">+</button
+                ><button class="Button" onclick="remElement('tomato')">-</button
+                >tomato</span
+              ><span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('onion')">+</button
+                ><button class="Button" onclick="remElement('onion')">-</button
+                >onion</span
+              ><span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('pickles')">
+                  +</button
+                ><button class="Button" onclick="remElement('pickles')">
+                  -</button
+                >pickles</span
+              >
             </div>
           </li>
           <li>
-            <span>Condiments</span>
+            <span>Condiments Free</span>
             <div class="items">
-              <span><button>+</button><button>-</button>ketchup</span>
-              <span><button>+</button><button>-</button>mayo</span>
-              <span><button>+</button><button>-</button>mustard</span>
-              <span><button>+</button><button>-</button>biggy</span>
+              <span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('ketchup')">
+                  +</button
+                ><button class="Button" onclick="remElement('ketchup')">
+                  -</button
+                >ketchup</span
+              >
+              <span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('mayo')">+</button
+                ><button class="Button" onclick="remElement('mayo')">-</button
+                >mayo</span
+              ><span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('mustard')">
+                  +</button
+                ><button class="Button" onclick="remElement('mustard')">
+                  -</button
+                >mustard</span
+              ><span
+                ><span class="counter">0</span
+                ><button class="Button" onclick="AddElement('biggy')">+</button
+                ><button class="Button" onclick="remElement('biggy')">-</button
+                >biggy</span
+              >
             </div>
           </li>
         </ul>
-        <div><button class="botona">Make Sandwich</button></div>
-        <div><button class="botona">Clear Order</button></div>
+        <div class="botons">
+          <button class="botona">Make Sandwich</button>
+          <button class="botona" onclick="removeAll()">Clear Order</button>
+        </div>
+        <div>Final price: 0dh</div>
       </section>
       <section id="sandwich">
         <div id="burger">
@@ -78,4 +171,5 @@
     </main>
     <!-- <footer>by Mohammed Sbaiti & Mohammed Ait Hssaine</footer> -->
   </body>
+  <script src="script.js"></script>
 </html>

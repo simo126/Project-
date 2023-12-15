@@ -94,7 +94,7 @@ footer {
   text-align: center;
 }
 #burger {
-  width: 18rem;
+  width: 30rem;
 }
 #top-bread {
   height: 6rem;
@@ -138,4 +138,52 @@ ul li span button:active {
 }
 .botona:active {
   background-color: hsl(300, 76%, 72%);
+}
+#lettuce {
+  border-radius: 8px;
+  background-color: #80d041;
+  height: 8px;
+  border-bottom: 3px solid #0f6d12;
+}
+#tomato {
+  border-radius: 14px;
+  background-color: #f13233;
+  height: 20px;
+  border-bottom: 5px solid #940c0e;
+}
+#onion {
+  border-radius: 8px;
+  background-color: #b95381;
+  height: 13px;
+  border-bottom: 4px solid #7e1846;
+}
+#swiss,
+#american,
+#gorgonzola,
+#provolone {
+  background-color: #e8ea02;
+  border-radius: 0.75rem;
+  height: 0.8rem;
+  border-bottom: 5px solid #eab902;
+}
+#beef,
+#turkey,
+#fish,
+#chicken {
+  border-radius: 1rem;
+  background-color: #603102;
+  height: 1rem;
+  border-bottom: 1rem solid #402408;
+}
+.counter {
+  height: 1rem;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.3rem;
+  margin: 4px 2px 0px 2px;
+  border: 1px solid red;
+  border-radius: 5px;
+  gap: 1rem;
 }
