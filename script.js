@@ -16,7 +16,7 @@ function updatePrixFinal(priceIncrement) {
 
   finalePrice.textContent = "Final price: " + newPrice + "dh";
 }
-function remElement(x) {
+function remElement(x, y) {
   let v = document.getElementById("insideburger");
   let elementToRemove = document.getElementById(x);
   let counterElement = document.querySelector(".counter-" + x);
@@ -26,6 +26,7 @@ function remElement(x) {
     v.removeChild(elementToRemove);
     if (currentValue > 0) {
       counterElement.textContent = currentValue - 1;
+      updatePrixFinal(y);
     }
   }
 }
