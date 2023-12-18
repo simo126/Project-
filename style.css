@@ -70,10 +70,6 @@ header img {
   display: flex;
   justify-content: space-evenly;
 }
-/* .Button {
-  height: 1rem;
-  width: 1rem;
-} */
 #sandwich {
   margin: 2rem 1rem 1rem 1rem;
   padding: 2rem;

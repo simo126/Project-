@@ -1,17 +1,3 @@
-/*function AddElement(x) {
-  let v = document.getElementById("insideburger");
-  v.innerHTML += "<div id=" + x + "> </div>";
-}
-function remElement(x) {
-  let v = document.getElementById("insideburger");
-  let elementToRemove = document.getElementById(x);
-
-  if (elementToRemove) {
-    v.removeChild(elementToRemove);
-  }
-  
-}*/
-
 function AddElement(x, y) {
   let v = document.getElementById("insideburger");
   let counterElement = document.querySelector(".counter-" + x);
@@ -19,16 +5,16 @@ function AddElement(x, y) {
   if (currentValue < 3) {
     v.innerHTML += `<div id="${x}"></div>`;
     counterElement.textContent = currentValue + 1;
-    updateFinalPrice(y);
+    updatePrixFinal(y);
   }
 }
-function updateFinalPrice(priceIncrement) {
-  let finalPriceElement = document.querySelector(".Final-price");
-  let currentPriceText = finalPriceElement.textContent;
-  let currentPrice = parseInt(currentPriceText.split(" ")[2]); // Extract current price value
-  let newPrice = currentPrice + priceIncrement; // Calculate new price
+function updatePrixFinal(priceIncrement) {
+  let finalePrice = document.querySelector(".Final-price");
+  let currentPriceText = finalePrice.textContent;
+  let currentPrice = parseInt(currentPriceText.split(" ")[2]);
+  let newPrice = currentPrice + priceIncrement;
 
-  finalPriceElement.textContent = "Final price: " + newPrice + "dh";
+  finalePrice.textContent = "Final price: " + newPrice + "dh";
 }
 function remElement(x) {
   let v = document.getElementById("insideburger");
@@ -53,6 +39,6 @@ function removeAll() {
 
   let container = document.getElementById("insideburger");
   container.innerHTML = "";
-  let finalPriceElement = document.querySelector(".Final-price");
-  finalPriceElement.textContent = "Final price: " + 0 + "dh";
+  let finalePrice = document.querySelector(".Final-price");
+  finalePrice.textContent = "Final price: " + 0 + "dh";
 }
