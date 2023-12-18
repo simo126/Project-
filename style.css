@@ -145,6 +145,12 @@ ul li span button:active {
   height: 8px;
   border-bottom: 3px solid #0f6d12;
 }
+#pickles {
+  border-radius: 8px;
+  background-color: #4e9518;
+  height: 8px;
+  border-bottom: 3px solid #0f6d12;
+}
 #tomato {
   border-radius: 14px;
   background-color: #f13233;
@@ -159,8 +165,8 @@ ul li span button:active {
 }
 #swiss,
 #american,
-#gorgonzola,
-#provolone {
+#cheedar,
+#mozarella {
   background-color: #e8ea02;
   border-radius: 0.75rem;
   height: 0.8rem;
@@ -168,14 +174,19 @@ ul li span button:active {
 }
 #beef,
 #turkey,
-#fish,
 #chicken {
   border-radius: 1rem;
-  background-color: #603102;
+  background-color: #9e5409;
   height: 1rem;
-  border-bottom: 1rem solid #402408;
+  border-bottom: 0.3rem solid #402408;
 }
-.counter {
+#fish {
+  border-radius: 1rem;
+  background-color: #ec9239;
+  height: 1rem;
+  border-bottom: 0.3rem solid #aa6b2d;
+}
+#counter {
   height: 1rem;
   width: 1rem;
   display: flex;
