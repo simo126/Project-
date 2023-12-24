@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sandwich Maker</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="imgs/sandwich.png" />
+    <link rel="icon" href="/imgs/sandwich.png" />
     <link rel="" href="" />
   </head>
   <body>
@@ -16,11 +16,11 @@
     </header>
     <main>
       <section class="maker">
-        <h1>Choose the ingredients</h1>
+        <h1 class="banner">CHOOSE THE INGREDIENTS:</h1>
 
         <ul>
           <li>
-            <span class="types">Meats</span><span class="prix"> 10dh</span>
+            <span class="types">MEATS</span><span class="prix"> 10dh</span>
             <div class="items">
               <span>
                 <span id="counter" class="counter-beef">0</span>
@@ -58,7 +58,7 @@
             </div>
           </li>
           <li>
-            <span class="types">Cheese</span><span class="prix"> 5dh</span>
+            <span class="types">CHEESE</span><span class="prix"> 5dh</span>
             <div class="items">
               <span
                 ><span id="counter" class="counter-swiss">0</span
@@ -93,7 +93,7 @@
             </div>
           </li>
           <li>
-            <span class="types">Veggies</span><span class="prix"> 3dh</span>
+            <span class="types">VEGGIES</span><span class="prix"> 3dh</span>
             <div class="items">
               <span
                 ><span id="counter" class="counter-lettuce">0</span
@@ -128,7 +128,7 @@
             </div>
           </li>
           <li>
-            <span class="types">Condiments</span><span class="prix"> 0dh</span>
+            <span class="types">CONDIMENTS</span><span class="prix"> 0dh</span>
             <div class="items">
               <span
                 ><span id="counter" class="counter-ketchup">0</span
@@ -164,8 +164,11 @@
         <div class="botons">
           <button class="botona" onclick="removeAll()">Clear Order</button>
         </div>
-        <div class="Final-price">Final price: 0dh</div>
+        <div class="Final-price">
+          FINAL PRICE: <span class="prix final">0 dh</span>
+        </div>
       </section>
+
       <section id="sandwich">
         <div id="burger">
           <div id="top-bread"></div>

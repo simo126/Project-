@@ -9,12 +9,12 @@ function AddElement(x, y) {
   }
 }
 function updatePrixFinal(priceIncrement) {
-  let finalePrice = document.querySelector(".Final-price");
+  let finalePrice = document.querySelector(".final");
   let currentPriceText = finalePrice.textContent;
-  let currentPrice = parseInt(currentPriceText.split(" ")[2]);
+  let currentPrice = parseInt(currentPriceText.split(" ")[0]);
   let newPrice = currentPrice + priceIncrement;
 
-  finalePrice.textContent = "Final price: " + newPrice + "dh";
+  finalePrice.textContent = newPrice + " dh";
 }
 function remElement(x, y) {
   let v = document.getElementById("insideburger");
