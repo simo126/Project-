@@ -20,7 +20,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  border-radius: 0px 0px 5px 5px;
+  /* border-radius: 0px 0px 5px 5px; */
   background-color: rgb(248, 236, 0);
   box-shadow: 2px 2px 10px black;
   overflow: hidden;
@@ -36,15 +36,20 @@ header img {
   filter: drop-shadow(2px 2px 20px black);
 }
 footer {
-  height: 3rem;
+  height: 2rem;
   width: 100%;
-  position: fixed;
+
   bottom: 0;
-  background: linear-gradient(270deg, purple, white);
-  color: beige;
+  background-color: rgb(248, 236, 0);
+  color: black;
   text-align: center;
+  display: grid;
+  place-content: center;
+  z-index: 3;
 }
 .banner {
+  box-shadow: 2px 2px 20px black;
+  background-color: yellow;
   border: 1px solid white;
   width: 80%;
   border-radius: 5px;
@@ -52,8 +57,9 @@ footer {
   overflow: hidden;
 }
 .maker {
+  box-shadow: 2px 2px 20px black;
   backdrop-filter: blur(10px);
-  border: 2px solid white;
+  border: 1px solid white;
   margin-top: 5rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -68,6 +74,7 @@ footer {
   justify-content: space-evenly;
 }
 .maker ul li {
+  box-shadow: 1px 1px 10px black;
   background-color: rgba(255, 255, 0, 0.4);
   list-style-type: none;
   border: 1px solid white;
@@ -93,34 +100,39 @@ footer {
   text-align: end;
 }
 .maker ul li span button:hover {
-  background-color: hsla(300, 76%, 72%, 0.484);
+  background-color: hsl(60, 100%, 50%);
 }
 .maker ul li span button:active {
-  background-color: hsl(300, 76%, 72%);
+  background-color: hsla(60, 100%, 50%, 0.5);
 }
+
 .botona {
+  box-shadow: 2px 2px 5px black;
   margin: 0.5rem;
   height: 2rem;
   width: 8rem;
   border: 1px solid red;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .botona:hover {
-  background-color: hsla(300, 76%, 72%, 0.484);
+  background-color: hsl(60, 100%, 50%);
 }
 .botona:active {
-  background-color: hsl(300, 76%, 72%);
+  background-color: hsl(60, 100%, 50%, 0.4);
 }
 .Final-price {
+  box-shadow: 2px 2px 5px black;
   background-color: yellow;
   border: 1px solid white;
   border-radius: 5px;
   width: 10rem;
   margin: auto;
+  padding-bottom: 1rem;
   overflow: hidden;
 }
 
 #sandwich {
+  box-shadow: 2px 2px 20px black;
   margin: 2rem 1rem 1rem 1rem;
   padding: 2rem;
   border-radius: 20px;
@@ -132,7 +144,7 @@ footer {
   align-items: center;
 }
 .prix {
-  color: #cb3232;
+  color: red;
 }
 
 ul li span button {
@@ -147,21 +159,34 @@ ul li span button {
   border-radius: 5px;
   gap: 1rem;
 }
-
-#burger {
-  width: 30rem;
+#counter {
+  height: 1rem;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.3rem;
+  margin: 4px 2px 0px 2px;
+  border: 1px solid red;
+  border-radius: 5px;
+  gap: 1rem;
 }
-#top-bread {
+
+#swdcontainer {
+  width: 50%;
+}
+#Top-bread {
   height: 6rem;
   border-radius: 900px 900px 10px 10px;
-  background-color: #a27732;
-  border-top: 9px solid #906725;
+  background-color: #af8745;
+  border-top: 9px solid #a1742d;
 }
-#bottom-bread {
-  background-color: #a27732;
+
+#Bottom-bread {
+  background-color: #af8745;
   border-radius: 10px 10px 50px 50px;
   height: 60px;
-  border-bottom: 11px solid #724d12;
+  border-bottom: 11px solid #a1742d;
 }
 #lettuce {
   border-radius: 8px;
@@ -191,34 +216,67 @@ ul li span button {
 #american,
 #cheedar,
 #mozarella {
-  background-color: #e8ea02;
   border-radius: 0.75rem;
   height: 0.8rem;
-  border-bottom: 5px solid #eab902;
+}
+#swiss {
+  background-color: hsl(51, 100%, 86%);
+  border-bottom: 5px solid hsl(51, 87%, 67%);
+}
+#cheedar {
+  background-color: hsl(23, 83%, 58%);
+  border-bottom: 5px solid hsl(23, 85%, 54%);
+}
+#american {
+  background-color: hsl(44, 100%, 70%);
+  border-bottom: 5px solid hsl(44, 95%, 59%);
+}
+#mozarella {
+  background-color: hsl(45, 51%, 86%);
+  border-bottom: 5px solid hsl(51, 87%, 67%);
 }
 #beef,
 #turkey,
-#chicken {
-  border-radius: 1rem;
-  background-color: #9e5409;
-  height: 1rem;
-  border-bottom: 0.3rem solid #402408;
-}
+#chicken,
 #fish {
   border-radius: 1rem;
-  background-color: #ec9239;
-  height: 1rem;
-  border-bottom: 0.3rem solid #aa6b2d;
+  height: 2rem;
 }
-#counter {
-  height: 1rem;
-  width: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.3rem;
-  margin: 4px 2px 0px 2px;
-  border: 1px solid red;
+#beef {
+  background-color: #9e5409;
+  border-bottom: 0.3rem solid #402408;
+}
+#turkey {
+  background-color: #a91101;
+  border-bottom: 0.3rem solid #402408;
+}
+#chicken {
+  background-color: #ddce77;
+  border-bottom: 0.3rem solid #9c8a23;
+}
+#fish {
+  background-color: #ffd083;
+  border-bottom: 0.3rem solid #fe9d00;
+}
+#ketchup,
+#mayo,
+#biggy,
+#mustard {
+  height: 0.3rem;
+}
+#ketchup {
+  background-color: red;
   border-radius: 5px;
-  gap: 1rem;
+}
+#mayo {
+  background-color: beige;
+  border-radius: 5px;
+}
+#biggy {
+  background-color: rgb(195, 136, 20);
+  border-radius: 5px;
+}
+#mustard {
+  background-color: orange;
+  border-radius: 5px;
 }

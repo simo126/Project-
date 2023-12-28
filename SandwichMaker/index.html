@@ -1,183 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sandwich Maker</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="/imgs/sandwich.png" />
-    <link rel="" href="" />
-  </head>
-  <body>
-    <header>
-      <img src="imgs/sandwich.png" alt="sandwich" width="50px" height="50px" />
-      <h1>Sandwich</h1>
-      <h1>Maker</h1>
-    </header>
-    <main>
-      <section class="maker">
-        <h1 class="banner">CHOOSE THE INGREDIENTS:</h1>
 
-        <ul>
-          <li>
-            <span class="types">MEATS</span><span class="prix"> 10dh</span>
-            <div class="items">
-              <span>
-                <span id="counter" class="counter-beef">0</span>
-                <button class="Button" onclick="AddElement('beef',10)">
-                  +
-                </button>
-                <button class="Button" onclick="remElement('beef',-10)">
-                  -</button
-                >beef
-              </span>
-              <span
-                ><span id="counter" class="counter-turkey">0</span
-                ><button class="Button" onclick="AddElement('turkey',10)">
-                  +</button
-                ><button class="Button" onclick="remElement('turkey',-10)">
-                  -</button
-                >turkey</span
-              >
-              <span
-                ><span id="counter" class="counter-fish">0</span
-                ><button class="Button" onclick="AddElement('fish',10)">
-                  +</button
-                ><button class="Button" onclick="remElement('fish',-10)">
-                  -</button
-                >fish</span
-              >
-              <span
-                ><span id="counter" class="counter-chicken">0</span
-                ><button class="Button" onclick="AddElement('chicken',10)">
-                  +</button
-                ><button class="Button" onclick="remElement('chicken',-10)">
-                  -</button
-                >chicken</span
-              >
-            </div>
-          </li>
-          <li>
-            <span class="types">CHEESE</span><span class="prix"> 5dh</span>
-            <div class="items">
-              <span
-                ><span id="counter" class="counter-swiss">0</span
-                ><button class="Button" onclick="AddElement('swiss',5)">
-                  +</button
-                ><button class="Button" onclick="remElement('swiss',-5)">
-                  -</button
-                >swiss</span
-              >
-              <span
-                ><span id="counter" class="counter-american">0</span
-                ><button class="Button" onclick="AddElement('american',5)">
-                  +</button
-                ><button class="Button" onclick="remElement('american',-5)">
-                  -</button
-                >american</span
-              ><span
-                ><span id="counter" class="counter-cheedar">0</span
-                ><button class="Button" onclick="AddElement('cheedar',5)">
-                  +</button
-                ><button class="Button" onclick="remElement('cheedar',-5)">
-                  -</button
-                >cheedar</span
-              ><span
-                ><span id="counter" class="counter-mozarella">0</span
-                ><button class="Button" onclick="AddElement('mozarella',5)">
-                  +</button
-                ><button class="Button" onclick="remElement('mozarella',-5)">
-                  -</button
-                >mozarella</span
-              >
-            </div>
-          </li>
-          <li>
-            <span class="types">VEGGIES</span><span class="prix"> 3dh</span>
-            <div class="items">
-              <span
-                ><span id="counter" class="counter-lettuce">0</span
-                ><button class="Button" onclick="AddElement('lettuce',3)">
-                  +</button
-                ><button class="Button" onclick="remElement('lettuce',-3)">
-                  -</button
-                >lettuce</span
-              >
-              <span
-                ><span id="counter" class="counter-tomato">0</span
-                ><button class="Button" onclick="AddElement('tomato',3)">
-                  +</button
-                ><button class="Button" onclick="remElement('tomato',-3)">
-                  -</button
-                >tomato</span
-              ><span
-                ><span id="counter" class="counter-onion">0</span
-                ><button class="Button" onclick="AddElement('onion',3)">
-                  +</button
-                ><button class="Button" onclick="remElement('onion',-3)">
-                  -</button
-                >onion</span
-              ><span
-                ><span id="counter" class="counter-pickles">0</span
-                ><button class="Button" onclick="AddElement('pickles',3)">
-                  +</button
-                ><button class="Button" onclick="remElement('pickles',-3)">
-                  -</button
-                >pickles</span
-              >
-            </div>
-          </li>
-          <li>
-            <span class="types">CONDIMENTS</span><span class="prix"> 0dh</span>
-            <div class="items">
-              <span
-                ><span id="counter" class="counter-ketchup">0</span
-                ><button class="Button" onclick="AddElement('ketchup',0)">
-                  +</button
-                ><button class="Button" onclick="remElement('ketchup',0)">
-                  -</button
-                >ketchup</span
-              >
-              <span
-                ><span id="counter" class="counter-mayo">0</span
-                ><button class="Button" onclick="AddElement('mayo',0)">+</button
-                ><button class="Button" onclick="remElement('mayo',0)">-</button
-                >mayo</span
-              ><span
-                ><span id="counter" class="counter-mustard">0</span
-                ><button class="Button" onclick="AddElement('mustard',0)">
-                  +</button
-                ><button class="Button" onclick="remElement('mustard',0)">
-                  -</button
-                >mustard</span
-              ><span
-                ><span id="counter" class="counter-biggy">0</span
-                ><button class="Button" onclick="AddElement('biggy',0)">
-                  +</button
-                ><button class="Button" onclick="remElement('biggy',0)">
-                  -</button
-                >biggy</span
-              >
-            </div>
-          </li>
-        </ul>
-        <div class="botons">
-          <button class="botona" onclick="removeAll()">Clear Order</button>
-        </div>
-        <div class="Final-price">
-          FINAL PRICE: <span class="prix final">0 dh</span>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandwich Maker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/imgs/sandwich.png" />
+  <link rel="" href="" />
+</head>
 
-      <section id="sandwich">
-        <div id="burger">
-          <div id="top-bread"></div>
-          <div id="insideburger"></div>
-          <div id="bottom-bread"></div>
-        </div>
-      </section>
-    </main>
-    <!-- <footer>by Mohammed Sbaiti & Mohammed Ait Hssaine</footer> -->
-  </body>
-  <script src="script.js"></script>
+<body>
+  <header>
+    <img src="imgs/sandwich.png" alt="sandwich" width="50px" height="50px" />
+    <h1>Sandwich</h1>
+    <h1>Maker</h1>
+  </header>
+  <main>
+    <section class="maker">
+      <h1 class="banner">CHOOSE THE INGREDIENTS:</h1>
+
+      <ul>
+        <li>
+          <span class="types">MEATS</span><span class="prix"> 10dh</span>
+          <div class="items">
+
+            <span>
+              <span id="counter" class="counter-beef">0</span>
+              <button class="Button" onclick="AddElement('beef',10)"><span>+</span></button>
+              <button class="Button" onclick="remElement('beef',-10)"><span>-</span></button>
+              <p>beef</p>
+            </span>
+
+            <span>
+              <span id="counter" class="counter-turkey">0</span>
+              <button class="Button" onclick="AddElement('turkey',10)"><span>+</span></button>
+              <button class="Button" onclick="remElement('turkey',-10)"><span>-</span></button>
+              <p>turkey</p>
+            </span>
+
+            <span>
+              <span id="counter" class="counter-fish">0</span>
+              <button class="Button" onclick="AddElement('fish',10)"><span>+</span></button>
+              <button class="Button" onclick="remElement('fish',-10)"><span>-</span></button>
+              <p>fish</p>
+            </span>
+
+            <span>
+              <span id="counter" class="counter-chicken">0</span>
+              <button class="Button" onclick="AddElement('chicken',10)"><span>+</span></button>
+              <button class="Button" onclick="remElement('chicken',-10)"><span>-</span></button>
+              <p>chicken</p>
+            </span>
+
+          </div>
+
+        </li>
+
+        <li>
+          <span class="types">CHEESE</span><span class="prix"> 5dh</span>
+          <div class="items">
+
+            <span>
+              <span id="counter" class="counter-swiss">0</span>
+              <button class="Button" onclick="AddElement('swiss',5)"><span>+</span></button>
+              <button class="Button" onclick="remElement('swiss',-5)"><span>-</span></button>
+              <p>swiss</p>
+            </span>
+
+            <span>
+              <span id="counter" class="counter-american">0</span>
+              <button class="Button" onclick="AddElement('american',5)"><span>+</span></button>
+              <button class="Button" onclick="remElement('american',-5)"><span>-</span></button>
+              <p>american</p>
+            </span>
+
+            <span>
+              <span id="counter" class="counter-cheedar">0</span>
+              <button class="Button" onclick="AddElement('cheedar',5)"><span>+</span></button>
+              <button class="Button" onclick="remElement('cheedar',-5)"><span>-</span></button>
+              <p>cheedar</p>
+            </span>
+
+            <span>
+              <span id="counter" class="counter-mozarella">0</span>
+              <button class="Button" onclick="AddElement('mozarella',5)"><span>+</span></button>
+              <button class="Button" onclick="remElement('mozarella',-5)"><span>-</span></button>
+              <p>mozarella</p>
+            </span>
+
+          </div>
+        </li>
+
+        <li>
+          <span class="types">VEGGIES</span><span class="prix"> 3dh</span>
+          <div class="items">
+
+            <span>
+              <span id="counter" class="counter-lettuce">0</span>
+              <button class="Button" onclick="AddElement('lettuce',3)"><span>+</span></button>
+              <button class="Button" onclick="remElement('lettuce',-3)"><span>-</span></button>
+              <p>lettuce</p>
+            </span>
+
+            <span>
+              <span id="counter" class="counter-tomato">0</span>
+              <button class="Button" onclick="AddElement('tomato',3)"><span>+</span></button>
+              <button class="Button" onclick="remElement('tomato',-3)"><span>-</span></button>
+              <p>tomato</p>
+            </span>
+
+            <span>
+              <span id="counter" class="counter-onion">0</span>
+              <button class="Button" onclick="AddElement('onion',3)"><span>+</span></button>
+              <button class="Button" onclick="remElement('onion',-3)"><span>-</span></button>
+              <p>onion</p>
+            </span>
+
+            <span>
+              <span id="counter" class="counter-pickles">0</span>
+              <button class="Button" onclick="AddElement('pickles',3)"><span>+</span></button>
+              <button class="Button" onclick="remElement('pickles',-3)"><span>-</span></button>
+              <p>pickles</p>
+            </span>
+
+          </div>
+        </li>
+
+
+
+        <li>
+          <span class="types">CONDIMENTS</span><span class="prix"> 0dh</span>
+          <div class="items">
+
+            <span>
+              <span id="counter" class="counter-ketchup">0</span>
+              <button class="Button" onclick="AddElement('ketchup',0)"><span>+</span></button>
+              <button class="Button" onclick="remElement('ketchup',0)"><span>-</span></button>
+              <p>ketchup</p>
+            </span>
+
+            <span>
+              <span id="counter" class="counter-mayo">0</span>
+              <button class="Button" onclick="AddElement('mayo',0)"><span>+</span></button>
+              <button class="Button" onclick="remElement('mayo',0)"><span>-</span></button>
+              <p>mayo</p>
+            </span>
+
+            <span>
+              <span id="counter" class="counter-mustard">0</span>
+              <button class="Button" onclick="AddElement('mustard',0)"><span>+</span></button>
+              <button class="Button" onclick="remElement('mustard',0)"><span>-</span></button>
+              <p>mustard</p>
+            </span>
+
+            <span>
+              <span id="counter" class="counter-biggy">0</span>
+              <button class="Button" onclick="AddElement('biggy',0)"><span>+</span></button>
+              <button class="Button" onclick="remElement('biggy',0)"><span>-</span></button>
+              <p>biggy</p>
+            </span>
+
+          </div>
+        </li>
+
+
+      </ul>
+
+
+
+      <div class="botons">
+        <button class="botona" onclick="removeAll()">Clear Order</button>
+      </div>
+      <div class="Final-price">
+        FINAL PRICE: <br />
+        <span class="prix final">0 dh</span>
+      </div>
+
+
+
+    </section>
+
+    <section id="sandwich">
+      <div id="swdcontainer">
+        <div id="Top-bread"></div>
+        <div id="insidesandwich"></div>
+        <div id="Bottom-bread"></div>
+      </div>
+    </section>
+  </main>
+  <footer>by Mohammed Sbaiti & Mohamed Ait Hssaine</footer>
+</body>
+<script src="script.js"></script>
+
 </html>
